@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Vergil Kelley">
+
+
+	<!-- jQuery CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  	<!--------jQuery CDN------------------>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+	<!---bootstrap javascript cdn-------->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  	<!---Bootstrap CDN---->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+	<!---CSS animation link--->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+	<!----------css style sheet----------------->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!--------jQuery CDN------------------------>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+    	// Fade-in function 3 seconds
+    	$(document).ready(function() {
+        $('body').hide().fadeIn(3000);
+      });
+  	</script>
+
+	<title>Real Estate</title>
+</head>
+<body>
+	<!-----------------navbar----------------------------------------------->
+	<div class="container-fluid" id="nav">
+		<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg" >  						<!--<a class="navbar-brand" href="#">About Me</a>-->
+ 						 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+   						<span class="navbar-toggler-icon"></span>
+
+ 						 </button>
+
+  							<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    					<ul class="navbar-nav">
+      						<li class="nav-item active">
+        						<a class="nav-link" href="#home">Buy<span class="sr-only">(current)</span></a>
+      						</li>
+
+      						<li class="nav-item">
+        						<a class="nav-link" href="#weather">Sell</a>
+      						</li>
+
+      						<li class="nav-item">
+        						<a class="nav-link" href="#weather">Rent</a>
+      						</li>
+
+      						<li class="nav-item">
+        						<a class="nav-link" href="#weather">Find Realtors</a>
+      						</li>
+
+      						<li class="nav-item">
+        						<a class="nav-link" href="#portfolio">About</a>
+      						</li>
+
+      						<li class="nav-item">
+        						<a class="nav-link" href="https://github.com/VergilKellley" target="_blank">Contact</a>
+      						</li>
+    					</ul>
+  					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!---------------end navbar--------------------------------------------->
+
+	<!-------------------landing page background photo---------------------->
+
+	<!--<header id="showcase">
+		<h1>Welcome to Real Estate</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+		<a href="#">Read More</a>
+	</header>-->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<div id="top-left" style="width: 90%; height: 400px; background-color: lightblue;">
+					<h1>R</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-9" id="top-center-img">
+				<img src="img/lp-bg-img.jpg" style="width: 100%; height: 310px;">
+			</div>
+		</div>
+	</div>
+			<div class="col-md-5" id="bottom-center" style="width: 100%; height: 200px; background-color: yellow;">
+					<h2>Luxury Homes</h2>
+				</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" id="mid-section">
+		<div class="row">
+			<div class="col-md-3 mx-auto">
+				<div class="buy-rent">
+					<p>Search Properties</p>
+					<label>
+						<input type="radio" name="radio-button">
+						<span class="buy">BUY</span>
+					</label>
+					<label>
+						<input type="radio" name="radio-button">
+						<span class="buy">RENT</span>
+					</label>
+				</div>
+				<form class="form-group" >
+					<input type="text" id="city-search" placeholder="City - Any" name="city">
+					<div id="select-boxes" >
+						<select>
+							<option id="any">Price - Any</option>
+							<option>Any</option>
+							<option>0 - $500,000</option>
+							<option>$500,001 - $1,000,000</option>
+							<option>1,000,001 - $5,000,00</option>
+							<option>5,000,001 - $10,000,000</option>
+							<option>$10,000,001 +</option>
+						</select>
+						<select>
+							<option class="option">Property Type - Any</option>
+							<option>House</option>
+							<option>Condo / Townhome</option>
+							<option>Multi Family</option>
+							<option>Mobile /Mfd</option>
+							<option>Farm Ranch</option>
+							<option>Land</option>
+						</select>
+						<select>
+							<option>Bedrooms - Any</option>
+							<option>1+ Bedrooms</option>
+							<option>2+ Bedrooms</option>
+							<option>3+ Bedrooms</option>
+							<option>4+ Bedrooms</option>
+							<option>5+ Bedrooms</option>
+						</select>
+						<select>
+							<option>Baths - Any</option>
+							<option>1+ Baths</option>
+							<option>2+ Baths</option>
+							<option>3+ Baths</option>
+							<option>4+ Baths</option>
+						</select>
+					</div>
+					<button class="form-group" type="submit" name="submit">SEARCH</button>
+				</form>
+				<a id="adv-search" href="#">Advanced Search</a>
+				
+			</div>
+			<div class="col-md-3 mx-auto">
+				<div class="boxes box-1">
+					<!-------Bootstrap Card------>
+					<div class="card" style="width:18rem;">
+						<img src="img/lp-bg-img.jpg" alt="Card One" class="card-img-top">
+						<div class="card-body">
+							<p>Featured Property</p>
+							<h5 class="card-title">$450,000</h5>
+							<a href="#" class="btn btn-primary">Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 mx-auto">
+				<div class="boxes box-2">
+					<!-------Bootstrap Card------>
+					<div class="card" style="width:18rem;">
+						<img src="img/lp-bg-img.jpg" alt="Card Two" class="card-img-top">
+						<div class="card-body">
+							<p>Featured Property</p>
+							<h5 class="card-title">$3,600,000</h5>
+							<a href="#" class="btn btn-primary">Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3  mx-auto">
+				<div class="boxes box-3">
+					<!-------Bootstrap Card------>
+					<div class="card" style="width:18rem;">
+						<img src="img/lp-bg-img.jpg" alt="Card Three" class="card-img-top">
+						<div class="card-body">
+							<p>Featured Property</p>
+							<h5 class="card-title">$6,3050,000</h5>
+							<a href="#" class="btn btn-primary">Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<footer>
+					<p><a href="https://vergilkellley.github.io">Copyright &copy; 2018<span style="font-style: italic;" > Vergil Kelley</span> Web Design & Development</p></a>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+
+
+		$(document).ready(function(){
+
+			$('.boxes').hover(
+				// trigger on mouse hover
+				function(){
+					$(this).animate({
+						marginTop: "-=3%",
+					},200);
+				},
+
+				// trigger on mouse out
+				function(){
+					$(this).animate({
+						marginTop: "0%"
+					},200);
+				}
+
+			);
+		});
+
+	</script>
+
+	<script>
+		function activatePlacesSearch(){
+			var input = document.getElementById('city-search');
+			var autocomplete = new google.maps.places.Autocomplete(input);
+		}
+	</script>
+
+	<!--------google maps search api------------->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvUEDX8l1WHMdH8RJCRYX8SJeZbUDnIzc&libraries=places&callback=activatePlacesSearch"></script>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
