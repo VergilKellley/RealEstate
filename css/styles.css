@@ -217,6 +217,14 @@ button:hover {
   -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75); }
 
+#about-container {
+  width: 100%;
+  height: 400px;
+  background: lightblue;
+  -webkit-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg); }
+
 footer {
   position: relative;
   top: 900px;
